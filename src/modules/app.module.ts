@@ -11,7 +11,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 @Module({
   imports: [
     ConfigModule.forRoot({  
-      envFilePath: 'src/.env'}),
+      envFilePath: '.env'}),
       MongooseModule.forRoot('mongodb+srv://oluwagbenga:ykgduQDU8nbgfzfz@demo.p3m90tj.mongodb.net/?retryWrites=true&w=majority'),
       VisitorsModule,
    ],

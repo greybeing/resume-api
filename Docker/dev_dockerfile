@@ -6,6 +6,8 @@ ADD package.json /app/package.json
 
 RUN npm install 
 
+COPY .env/.env.dev .env
+
 ADD . /app
 
 EXPOSE 9100

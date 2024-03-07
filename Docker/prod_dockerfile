@@ -6,9 +6,12 @@ ADD package.json /app/package.json
 
 RUN npm install 
 
+
+COPY .env/.env.prod .env
+
 ADD . /app
 
-EXPOSE 9200
+EXPOSE 9300
 
 CMD ["npm", "run", "start"]
 
