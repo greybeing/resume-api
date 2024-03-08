@@ -6,7 +6,7 @@ ADD package.json /app/package.json
 
 RUN npm install 
 
-COPY .env/.env.dev .env
+COPY env/.env.dev .env
 
 ADD . /app
 
