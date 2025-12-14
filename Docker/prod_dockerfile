@@ -10,7 +10,7 @@ RUN npm install --force
 
 COPY env/.env.prod .env
 
-EXPOSE 9300
+EXPOSE 9000
 
 CMD ["npm", "run", "start"]
 
