@@ -12,7 +12,7 @@ import { MongooseModule } from '@nestjs/mongoose';
   imports: [
     ConfigModule.forRoot({  
       envFilePath: '.env'}),
-      MongooseModule.forRoot('mongodb+srv://oluwagbenga:ykgduQDU8nbgfzfz@demo.p3m90tj.mongodb.net/?retryWrites=true&w=majority'),
+      MongooseModule.forRoot('mongodb+srv://oluwagbenga:RXJSeT7UMahoaIVR@demo.p3m90tj.mongodb.net/test?retryWrites=true&w=majority'),
       VisitorsModule,
    ],
   controllers: [AppController, DownloadController],
